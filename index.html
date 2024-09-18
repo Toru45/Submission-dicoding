@@ -18,7 +18,7 @@
             <a href="https://dashboard.bangkit.academy/login">Bangkit Dashboard</a>
         </nav>
     </header>
-    
+
     <main>
         <article>
             <section class="home" id="home">
@@ -58,5 +58,24 @@
     <footer>
         <h1 class="credit"> created by <span> Faiq Radiansyah</span>  </h1>
     </footer>
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+<script>
+  window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var scrollTop = document.getElementById('scroll-top');
+
+    if (scrollPosition > 200) {
+      scrollTop.classList.add('active');
+    } else {
+      scrollTop.classList.remove('active');
+    }
+  });
+
+  document.getElementById('scroll-top').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>
